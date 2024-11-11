@@ -14,4 +14,4 @@ Inicie a biblioteca e o app para teste
 npm run start-sidebar
 ```
 
-obs: A cada modificação na biblioteca, haverá p hot-reload.
+obs: A cada modificação na biblioteca, haverá o hot-reload.
