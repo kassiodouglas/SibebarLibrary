@@ -1,0 +1,15 @@
+<button (click)="click();this.toggleSub()" class="w-full">
+
+  <div class="flex flex-row items-center justify-between w-full hover:bg-slate-300 active:bg-slate-500 transition-all px-3 p-2 my-1">
+    <div class="flex felx-row items-center justify-start">
+      <div *ngIf="icon" class="me-3"><i [class]="icon"></i></div>
+      <div>{{label}}</div>
+    </div>
+    <div *ngIf="sublink" class="mx-3 text-gray-500 text-xs"><i class="fa-solid fa-chevron-right"></i></div>
+  </div>
+
+  <div *ngIf="sublink && subOpen" class="ms-1">
+    <ng-content></ng-content>
+  </div>
+
+</button>

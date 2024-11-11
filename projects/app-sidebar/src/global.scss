@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+body{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+  line-height: 1.5 !important;
+}
+
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #ffffff42;
+  border: 2px solid #ffffff2f;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #3f3f3f;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #3f3f3f;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #3f3f3f;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #113441;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #3f3f3f;
+}

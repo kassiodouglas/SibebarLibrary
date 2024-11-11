@@ -1,0 +1,12 @@
+<div [class]="classSidebar"  [ngClass]="{ 'translate-x-0': isOpen, '-translate-x-full': !isOpen }">
+
+  <button (click)="close()" [ngClass]="classCloseBUtton">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+
+  <div class="overflow-y-auto z-10" #contentContainer></div>
+
+</div>
+
+<div (click)="close()" [class]="classBackdrop" [ngClass]="{'opacity-0': inClosing}"></div>
+

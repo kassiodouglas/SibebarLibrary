@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start-sidebar": "npm-run-all -p sidebar-build-watch sidebar-serve",
+    "sidebar-build-watch": "ng build sidebar --watch",
+    "sidebar-serve": "ng serve app-sidebar --port 5200"
   },
   "private": true,
   "dependencies": {
@@ -18,21 +21,29 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
     "rxjs": "~6.6.0",
+    "tailwindcss": "^3.4.14",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~12.2.18",
     "@angular/cli": "~12.2.17",
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
+    "concurrently": "^9.1.0",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "^12.1.1",
+    "npm-run-all": "^4.1.5",
     "typescript": "~4.3.5"
   }
 }
